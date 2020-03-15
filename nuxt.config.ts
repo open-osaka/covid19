@@ -11,7 +11,7 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 東京都 新型コロナウイルス感染症対策サイト',
+    titleTemplate: '%s | 大阪府（非公式） 新型コロナウイルス感染症対策サイト',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,7 +24,7 @@ const config: Configuration = {
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '東京都 新型コロナウイルス感染症対策サイト'
+        content: '大阪府（非公式） 新型コロナウイルス感染症対策サイト'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -35,7 +35,7 @@ const config: Configuration = {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '東京都 新型コロナウイルス感染症対策サイト'
+        content: '大阪府（非公式） 新型コロナウイルス感染症対策サイト'
       },
       {
         hid: 'og:description',
@@ -46,7 +46,7 @@ const config: Configuration = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
+        content: 'https://hopeful-mcnulty-9013c8.netlify.com/ogp.png'
       },
       {
         hid: 'twitter:card',
@@ -126,8 +126,8 @@ const config: Configuration = {
       {
         strategy: 'prefix_except_default',
         detectBrowserLanguage: {
-          useCookie: true,
-          cookieKey: 'i18n_redirected'
+          /*useCookie: true,
+          cookieKey: 'i18n_redirected'/*
         },
         locales: [
           {
@@ -168,8 +168,7 @@ const config: Configuration = {
             code: 'ja-basic',
             name: 'やさしい にほんご',
             iso: 'ja-JP'
-          }
-        ],
+          }/*],
         defaultLocale: 'ja',
         vueI18n: {
           fallbackLocale: 'ja',

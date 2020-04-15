@@ -8,7 +8,7 @@
         アクセスしようとしたページが見つかりませんでした。<br />ページが移動または削除されたか、URLの入力間違いの可能性があります。
       </p>
       <div class="Error-ButtonContainer">
-        <NuxtLink to="/" class="Error-Button">
+        <NuxtLink :to="localePath('/')" class="Error-Button">
           トップページへ戻る
         </NuxtLink>
       </div>

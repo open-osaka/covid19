@@ -1,8 +1,8 @@
 <template>
   <v-app class="app">
     <div v-if="loading" class="loader">
-      <img src="/logo.svg" alt="東京都" />
-      <scale-loader color="#00A040" />
+      <img src="/logo.png" alt="大阪府" />
+      <scale-loader color="#364c97" />
     </div>
     <div v-else class="appContainer">
       <div class="naviContainer">
@@ -61,7 +61,7 @@ export default Vue.extend({
       link: [
         {
           rel: 'canonical',
-          href: `https://stopcovid19.metro.tokyo.lg.jp${this.$route.path}`
+          href: `https://covid19-osaka.info${this.$route.path}`
         }
       ]
     }
@@ -78,10 +78,12 @@ export default Vue.extend({
   position: relative;
   @include largerThan($small) {
     display: grid;
-    grid-template-columns: 240px auto;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto;
   }
   @include largerThan($huge) {
-    grid-template-columns: 325px auto;
+    grid-template-columns: 325px 1fr;
+    grid-template-rows: auto;
   }
 }
 @include lessThan($small) {

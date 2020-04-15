@@ -5,6 +5,7 @@
       <h2 class="Flow-Heading-Title">
         新型コロナウイルス感染症が心配なときに
       </h2>
+      <PrinterButton :wrapper-class="'Flow-PullRight'" />
     </div>
     <div class="Flow-Card">
       <h2>
@@ -167,7 +168,7 @@
           <div id="pcr" class="mx-2 mb-5">
             <img
               src="/flow/sp/sp_flow_06_02@2x.png"
-              alt="PCR検査 東京都健康安全研究センター等"
+              alt="PCR検査 大阪府健康安全研究センター等"
             />
           </div>
           <div class="Col2Btn">
@@ -204,7 +205,7 @@
         rel="noopener"
         class="Flow-Card-Button"
       >
-        詳細を見る(東京都福祉保健局)
+        詳細を見る(大阪府福祉保健局)
         <v-icon class="Flow-Card-Button-ExternalLinkIcon" size="20">
           mdi-open-in-new
         </v-icon>
@@ -215,9 +216,10 @@
 
 <script>
 import CovidIcon from '@/static/covid.svg'
+import PrinterButton from '@/components/PrinterButton'
 import DesktopFlowSvg from '@/components/DesktopFlowSvg.vue'
 export default {
-  components: { CovidIcon, DesktopFlowSvg },
+  components: { CovidIcon, PrinterButton, DesktopFlowSvg },
   head() {
     return {
       title: '新型コロナウイルス感染症が心配なときに'
@@ -268,7 +270,7 @@ export default {
       padding: 30px 20px;
       margin-bottom: 20px;
       &.Flat {
-        background-color: $gray-4;
+        background-color: $gray-5;
       }
       .TelLink {
         width: 80%;
@@ -298,7 +300,7 @@ export default {
         padding: 12px 0;
         border-width: 0.5px 0;
         border-style: solid;
-        border-color: $gray-3;
+        border-color: $gray-4;
         .Heijitsu {
           width: 70%;
           margin-right: 5px;
@@ -336,6 +338,9 @@ export default {
         color: $green-1 !important;
       }
     }
+  }
+  &-PullRight {
+    margin: 0 0 0 auto;
   }
 }
 @include largerThan($medium) {

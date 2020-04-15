@@ -7,14 +7,14 @@
       {{ title }}
     </h2>
     <div class="date">
-      <span>最終更新 </span>
-      <time :datetime="formattedDate">{{ date }}</time>
+      <span>{{ $t('最終更新') }} </span>
+      <time :datetime="formattedDate">{{ formattedDate }}</time>
     </div>
   </div>
 </template>
 
 <script>
-import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+import { convertDateToFormat } from '@/utils/formatDate'
 
 export default {
   props: {
@@ -35,7 +35,7 @@ export default {
     }
   },
   data() {
-    const formattedDate = convertDatetimeToISO8601Format(this.date)
+    const formattedDate = convertDateToFormat(this.date)
     return { formattedDate }
   }
 }

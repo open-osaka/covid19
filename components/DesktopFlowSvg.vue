@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <svg viewBox="0 0 1046 1256" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -87,7 +88,7 @@
         .j,
         .o,
         .v {
-          fill: #00a040;
+          fill: #364c97;
         }
 
         .k,
@@ -150,7 +151,7 @@
 
         .ab,
         .x {
-          stroke: #00a040;
+          stroke: #364c97;
         }
 
         .ak,
@@ -1053,7 +1054,7 @@
         </text>
         <g transform="translate(-101 1091)">
           <text class="b" transform="translate(238 106)">
-            <tspan x="-77" y="0">東京都健康安全</tspan>
+            <tspan x="-77" y="0">大阪府健康安全</tspan>
             <tspan x="-77" y="25">研究センター等</tspan>
           </text>
         </g>

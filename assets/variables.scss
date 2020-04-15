@@ -1,9 +1,9 @@
 // ==================
 // color
-$green-1: #00A040;
-$green-2: #00B849;
-$green-3: #00D154;
-$green-4: #00EB5E;
+$green-1: #364c97;
+$green-2: #2445b5;
+$green-3: #005eeb;
+$green-4: #0076eb;
 $gray-1: #333333;
 $gray-2: #4D4D4D;
 $gray-3: #808080;
@@ -21,7 +21,17 @@ $shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
 $huge: 1440;
 $large: 1170;
 $medium: 768;
-$small: 450;
+$small: 600;
+
+// ==================
+// z-index
+$z-index-map: (
+  opened-side-navigation: 101,
+  sp-navigation: 100,
+);
+@function z-index-of($key) {
+  @return map-get($z-index-map, $key);
+}
 
 // ==================
 // media-query

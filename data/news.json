@@ -1,14 +1,19 @@
 {
-  "newsItems": [
-    {
-      "date": "2020/03/05",
-      "url": "https://www.2020games.metro.tokyo.lg.jp/news/2020/0305_3108.html",
-      "text": "マスク及び消毒液を寄贈しました！"
-    },
-    {
-      "date": "2020/03/05",
-      "url": "https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/1007458.html",
-      "text": "（第70報）事業継続緊急対策（テレワーク）助成金募集を開始します！"
-    }
-  ]
+    "newsItems": [
+        {
+            "date": "2020/04/09",
+            "url": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37984",
+            "text": "新型コロナウイルス感染症患者（525例目から616例目）の発生について"
+        },
+        {
+            "date": "2020/04/08",
+            "url": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37976",
+            "text": "新型コロナウイルス感染症患者（482例目から524例目）の発生および患者の死亡について"
+        },
+        {
+            "date": "2020/04/07",
+            "url": "http://www.pref.osaka.lg.jp/hodo/index.php?site=fumin&pageId=37969",
+            "text": "「新型コロナウイルス感染症患者（429例目から481例目）の発生について」の訂正について（4月7日提供分）"
+        }
+    ]
 }

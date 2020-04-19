@@ -15,6 +15,7 @@
           rel="noopener"
         >
           <time
+            v-if="item.date"
             class="WhatsNew-list-item-anchor-time px-2"
             :datetime="formattedDate(item.date)"
           >

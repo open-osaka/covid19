@@ -1,6 +1,9 @@
 <template>
   <data-view class="SvgCard" :title="title" :title-id="titleId" :date="date">
     <slot />
+    <div class="note">
+      {{ note }}
+    </div>
   </data-view>
 </template>
 
@@ -34,6 +37,11 @@ export default {
     },
     date: {
       type: String,
+      default: ''
+    },
+    note: {
+      type: String,
+      required: false,
       default: ''
     }
   }

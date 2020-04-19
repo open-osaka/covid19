@@ -102,7 +102,7 @@ class DataJson:
                 "代" if isinstance(self.patients_sheet.cell(row=i, column=3).value, int) else ""
             )
             data["性別"] = self.patients_sheet.cell(row=i, column=4).value
-            data["退院"] = "○" if "退院" in str(self.patients_sheet.cell(row=i, column=8).value) else ""
+            data["退院"] = "○" if any(x in str(self.patients_sheet.cell(row=i, column=8).value) for x in ("退院", "解除")) else ""
             data["date"] = release_date.strftime("%Y-%m-%d")
             self._patients_json["data"].append(data)
 

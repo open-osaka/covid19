@@ -7,14 +7,11 @@
       <i18n
         path="当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、大阪府が{codeForOSAKA}の協力を得て開設したものです。"
       >
-        <a
-          href="https://code4.osaka"
-          target="_blank"
-          rel="noopener"
-          place="codeForOSAKA"
-        >
-          Code for OSAKA
-        </a>
+        <template v-slot:codeForOSAKA>
+          <a href="https://code4.osaka" target="_blank" rel="noopener">
+            Code for OSAKA
+          </a>
+        </template>
       </i18n>
       <br />
       <br />
@@ -156,28 +153,30 @@
       <i18n
         path="本サイトで公表している元データは、大阪府ホームページ「{aboutCorona}」で公表しています。"
       >
-        <a
-          href="http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html"
-          target="_blank"
-          rel="noopener"
-          place="aboutCorona"
-        >
-          {{ $t('新型コロナウイルス感染症について') }}
-        </a>
+        <template v-slot:aboutCorona>
+          <a
+            href="http://www.pref.osaka.lg.jp/iryo/osakakansensho/corona.html"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('新型コロナウイルス感染症について') }}
+          </a>
+        </template>
       </i18n>
     </TextCard>
     <TextCard :title="$t('ソースコードについて')">
       <i18n
         path="本サイトのソースコードはMITライセンスで公開されており、誰でも自由に利用することができます。詳しくは、{githubRepo}をご確認ください。"
       >
-        <a
-          href="https://github.com/codeforosaka/covid19"
-          target="_blank"
-          rel="noopener"
-          place="githubRepo"
-        >
-          {{ $t('GitHub リポジトリ') }}
-        </a>
+        <template v-slot:githubRepo>
+          <a
+            href="https://github.com/codeforosaka/covid19"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('GitHub リポジトリ') }}
+          </a>
+        </template>
       </i18n>
     </TextCard>
 
